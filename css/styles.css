@@ -1,0 +1,144 @@
+:root {
+  --nav-bg-color: oklch(27.9% 0.041 260.031);
+  --nav-text-color: oklch(96.8% 0.007 247.896);
+  --main-bg-color: oklch(37.2% 0.044 257.287);
+  --main-text-color: var(--nav-text-color);
+  --footer-text-color: var(--nav-text-color);
+  --footer-bg-color: var(--nav-bg-color);
+  --h2-line-color: oklch(69.6% 0.17 162.48);
+  --light-blue: oklch(68.5% 0.169 237.323);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#logo {
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 25%;
+}
+
+header nav ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: var(--light-blue);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  padding: 20px 0;
+}
+
+main h2 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--h2-line-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-size: 20px;
+}
+
+main section {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main section ul {
+  list-style: none;
+}
+
+#objectifs {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+#sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#html {
+  color: oklch(76.9% 0.188 70.08);
+  font-weight: 600;
+}
+
+#css {
+  color: oklch(78.9% 0.154 211.53);
+  font-weight: 600;
+}
+
+#underline {
+  text-decoration-line: underline;
+  text-decoration-color: oklch(57.7% 0.245 27.325);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+#title {
+  color: var(--h2-line-color);
+  font-weight: 600;
+}
+
+#bold {
+  font-weight: 600;
+}
+
+#js {
+  color: oklch(90.5% 0.182 98.111);
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: 10px 0;
+  font-weight: 500;
+}

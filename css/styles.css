@@ -94,6 +94,13 @@ main section ul {
   display: flex;
   flex-direction: column;
   gap: 7.5px;
+  padding-left: 20px;
+}
+
+#text-context {
+  max-width: 600px;
+  line-height: 1.6rem;
+  padding-left: 20px;
 }
 
 #sections {
@@ -105,6 +112,7 @@ main section ul {
 #html {
   color: oklch(76.9% 0.188 70.08);
   font-weight: 600;
+  line-height: 1.6;
 }
 
 #css {
@@ -133,12 +141,76 @@ main section ul {
   font-weight: 600;
 }
 
+main #seances {
+  text-decoration-color: oklch(57.7% 0.245 27.325);
+}
+
+/*
+MIT Liscence
+https://github.com/twbs/icons/blob/main/LICENSE
+Image eye bootstrap
+*/
+.eye {
+  mask: url("../assets/images/eye.svg") no-repeat center;
+  mask-size: contain;
+  background-color: white; /* ta couleur */
+  width: 36px;
+  height: 36px;
+}
+
+/*
+MIT Liscence
+https://github.com/twbs/icons/blob/main/LICENSE
+Image play bootstrap
+*/
+#ready_run {
+  mask: url("../assets/images/play.svg") no-repeat center;
+  mask-size: contain;
+  background-color: white; /* ta couleur */
+  width: 36px;
+  height: 36px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: oklch(44.6% 0.043 257.281);
+  width: 550px;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 30px;
+}
+
+#title-card {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#features {
+  display: flex;
+  justify-content: space-around;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
-  padding: 10px 0;
+  padding: 15px 0;
   font-weight: 500;
+}
+
+#very_bold {
+  font-weight: 900;
+}
+
+#italic {
+  font-style: italic;
+}
+
+a {
+  color: var(--nav-text-color);
 }

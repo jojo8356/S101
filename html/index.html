@@ -11,9 +11,10 @@
       <nav>
         <img src="../assets/images/logo.png" alt="" id="logo" />
         <ul>
-          <li>Présentation</li>
-          <li>Timeline</li>
-          <li>À Propos</li>
+          <li><a href="./index.html">Présentation</a></li>
+          <li><a href="./seances.html">Seances</a></li>
+          <li>Documentation</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
@@ -48,7 +49,7 @@
         </section>
         <section>
           <h2>Context</h2>
-          <p>
+          <p id="text-context">
             Suite à une <span id="underline">panne informatique</span> du
             <span id="bold">système de base de données</span> de la grande
             surface <span id="title">«E.Carrechan»</span>, l’équipe informatique
@@ -61,23 +62,29 @@
         </section>
         <section>
           <h2>Fonctionnalités</h2>
-          <div>
-            <img src="" alt="" />
-            <p>Lecture complète du CSV</p>
-            <p>
-              Affichage propre et complet du fichier CSV par la technique de
-              lecture par colonne
-            </p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>Logiciel prêt à l'emploi</p>
-            <p>
-              Dès que l'on télécharge mon code, il suffit juste de taper 'make
-              all'. Les options peuvent etre afficher par l'option -h, --help:
-              affichage de la documentation, On peut tester le code en éxécutant
-              les tests avec ./tests.sh
-            </p>
+          <div id="features">
+            <div id="card">
+              <p id="title-card">Lecture complète du CSV</p>
+              <div class="eye"></div>
+              <p>
+                Affichage propre et complet du fichier CSV par la technique de
+                lecture par colonne
+              </p>
+            </div>
+            <div id="card">
+              <p id="title-card">Logiciel prêt à l'emploi</p>
+              <div id="ready_run"></div>
+              <p>
+                Dès que l'on télécharge le code, il suffit juste de taper
+                <span id="very_bold">'make all'</span>. Les options peuvent etre
+                afficher par l'option <span id="very_bold">-h, --help</span>:
+                <span id="italic"
+                  >affichage de la documentation, On peut tester le code
+                  avec</span
+                >
+                <span id="very_bold">./tests.sh</span>
+              </p>
+            </div>
           </div>
         </section>
       </div>
